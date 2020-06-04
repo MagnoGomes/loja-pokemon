@@ -1,159 +1,155 @@
-<h1 class="destaque-pokemon">Pokémon em destaque <i><img [src]="urlDestaque" class="destaque-icon" id="pokedimg1"></i></h1>
+<h1 class="destaque-pokemon">Pokémon em destaque <i><img [src]="urlDestaque" class="destaque-icon" id="pokedimg1"></i>
+</h1>
 
-<div class="container-fluid">
-        <div class="row">
+<div class="container-fluid" id="esquerda">
+  <div class="row">
 
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
-                <div class="tile">
+      <div class="tile">
 
-                    <div class="wrapper">
-                        <div class="header" id="poked1" style="text-transform: capitalize;">{{ namepoke }}</div>
+        <div class="wrapper">
+          <div class="header" id="poked1" style="text-transform: capitalize;">{{ namepoke }}</div>
 
-                        <div class="banner-img">
-                            <img src="#" id="poked1-img">
-                        </div>
-
-                        <div class="promotion-center"> <a>PROMOÇÃO : </a><a class="valor"> {{ valor }}</a></div>
-
-                        <div class="dates">
-
-                          <div class="start">
-                              <strong>INÍCIO</strong> 12:30 JAN 2020
-                              <span></span>
-                          </div>
-
-                          <div class="ends">
-                              <strong>FIM</strong> 14:30 OUT 2020
-                          </div>
-
-                        </div>
-
-                        <div class="stats">
-
-                            <div>
-                                <strong>ID</strong><a id="poked1-id"></a>
-                            </div>
-
-                            <div>
-                                <strong>TIPO</strong><a id="poked1-tipo" style="text-transform: capitalize;"></a>
-                            </div>
-
-                            <div>
-                              <strong>PESO</strong><a id="poked1-peso" style="text-transform: capitalize;"></a><a> lb</a>
-                          </div>
-
-                        </div>
-
-                        <div class="footer">
-                            <a href="#" class="Cbtn Cbtn-primary">View</a>
-                            <a href="#" class="Cbtn Cbtn-danger">Delete</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-
-              <div class="tile">
-
-                  <div class="wrapper">
-                      <div class="header" id="poked2" style="text-transform: capitalize;">{{ namepoke2 }}</div>
-
-                      <div class="banner-img">
-                          <img src="#" id="poked2-img">
-                      </div>
-
-                      <div class="promotion-center"> <a>PROMOÇÃO : </a><a class="valor"> {{ valor }}</a></div>
-
-                      <div class="dates">
-
-                        <div class="start">
-                            <strong>INÍCIO</strong> 12:30 JAN 2020
-                            <span></span>
-                        </div>
-
-                        <div class="ends">
-                            <strong>FIM</strong> 14:30 OUT 2020
-                        </div>
-
-                      </div>
-
-                      <div class="stats">
-
-                          <div>
-                              <strong>ID</strong><a id="poked2-id"></a>
-                          </div>
-
-                          <div>
-                              <strong>TIPO</strong><a id="poked2-tipo" style="text-transform: capitalize;"></a>
-                          </div>
-
-                          <div>
-                            <strong>PESO</strong><a id="poked2-peso" style="text-transform: capitalize;"></a><a> lb</a>
-                        </div>
-
-                      </div>
-
-                      <div class="footer">
-                          <a href="#" class="Cbtn Cbtn-primary">View</a>
-                          <a href="#" class="Cbtn Cbtn-danger">Delete</a>
-                      </div>
-                  </div>
-              </div>
+          <div class="banner-img">
+            <img src="#" id="poked1-img">
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="promotion-center"> <a>PROMOÇÃO : </a><a class="valor"> {{ valor }}</a></div>
 
-            <div class="tile">
+          <div class="dates">
 
-                <div class="wrapper">
-                    <div class="header" id="poked3" style="text-transform: capitalize;">{{ namepoke3 }}</div>
-
-                    <div class="banner-img">
-                        <img src="#" id="poked3-img">
-                    </div>
-
-                    <div class="promotion-center"> <a>PROMOÇÃO : </a><a class="valor"> {{ valor }}</a></div>
-
-                    <div class="dates">
-
-                      <div class="start">
-                          <strong>INÍCIO</strong> 12:30 JAN 2020
-                          <span></span>
-                      </div>
-
-                      <div class="ends">
-                          <strong>FIM</strong> 14:30 OUT 2020
-                      </div>
-
-                    </div>
-
-                    <div class="stats">
-
-                        <div>
-                            <strong>ID</strong><a id="poked3-id"></a>
-                        </div>
-
-                        <div>
-                            <strong>TIPO</strong><a id="poked3-tipo" style="text-transform: capitalize;"></a>
-                        </div>
-
-                        <div>
-                          <strong>PESO</strong><a id="poked3-peso" style="text-transform: capitalize;"></a><a> lb</a>
-                      </div>
-
-                    </div>
-
-                    <div class="footer">
-                        <a href="#" class="Cbtn Cbtn-primary">View</a>
-                        <a href="#" class="Cbtn Cbtn-danger">Delete</a>
-                    </div>
-                </div>
+            <div class="start">
+              <strong>INÍCIO</strong> 12:30 JAN 2020
+              <span></span>
             </div>
-        </div>
 
+            <div class="ends">
+              <strong>FIM</strong> 14:30 OUT 2020
+            </div>
+
+          </div>
+
+          <div class="stats">
+
+            <div>
+              <strong>ID</strong><a id="poked1-id"></a>
+            </div>
+
+            <div>
+              <strong>TIPO</strong><a id="poked1-tipo" style="text-transform: capitalize;"></a>
+            </div>
+
+            <div>
+              <strong>PESO</strong><a id="poked1-peso" style="text-transform: capitalize;"></a><a> lb</a>
+            </div>
+
+          </div>
+
+          <div class="footer">
+            <a routerLink="/pokemon" class="Cbtn Cbtn-primary">Ver</a>
+          </div>
         </div>
+      </div>
     </div>
 
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
+      <div class="tile">
+
+        <div class="wrapper">
+          <div class="header" id="poked2" style="text-transform: capitalize;">{{ namepoke2 }}</div>
+
+          <div class="banner-img">
+            <img src="#" id="poked2-img">
+          </div>
+
+          <div class="promotion-center"> <a>PROMOÇÃO : </a><a class="valor"> {{ valor }}</a></div>
+
+          <div class="dates">
+
+            <div class="start">
+              <strong>INÍCIO</strong> 12:30 JAN 2020
+              <span></span>
+            </div>
+
+            <div class="ends">
+              <strong>FIM</strong> 14:30 OUT 2020
+            </div>
+
+          </div>
+
+          <div class="stats">
+
+            <div>
+              <strong>ID</strong><a id="poked2-id"></a>
+            </div>
+
+            <div>
+              <strong>TIPO</strong><a id="poked2-tipo" style="text-transform: capitalize;"></a>
+            </div>
+
+            <div>
+              <strong>PESO</strong><a id="poked2-peso" style="text-transform: capitalize;"></a><a> lb</a>
+            </div>
+
+          </div>
+
+          <div class="footer">
+            <a routerLink="/pokemon" class="Cbtn Cbtn-primary">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+
+      <div class="tile">
+
+        <div class="wrapper">
+          <div class="header" id="poked3" style="text-transform: capitalize;">{{ namepoke3 }}</div>
+
+          <div class="banner-img">
+            <img src="#" id="poked3-img">
+          </div>
+
+          <div class="promotion-center"> <a>PROMOÇÃO : </a><a class="valor"> {{ valor }}</a></div>
+
+          <div class="dates">
+
+            <div class="start">
+              <strong>INÍCIO</strong> 12:30 JAN 2020
+              <span></span>
+            </div>
+
+            <div class="ends">
+              <strong>FIM</strong> 14:30 OUT 2020
+            </div>
+
+          </div>
+
+          <div class="stats">
+
+            <div>
+              <strong>ID</strong><a id="poked3-id"></a>
+            </div>
+
+            <div>
+              <strong>TIPO</strong><a id="poked3-tipo" style="text-transform: capitalize;"></a>
+            </div>
+
+            <div>
+              <strong>PESO</strong><a id="poked3-peso" style="text-transform: capitalize;"></a><a> lb</a>
+            </div>
+
+          </div>
+
+          <div class="footer">
+            <a routerLink="/pokemon" class="Cbtn Cbtn-primary">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
