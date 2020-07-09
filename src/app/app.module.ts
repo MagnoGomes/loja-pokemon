@@ -8,7 +8,6 @@ import { PokeCardComponent } from './view/poke-card/poke-card.component';
 import { PokeCardServiceService } from './view/poke-card/poke-card-service.service';
 import { InfoService } from './controller/info.service';
 import { CarrinhoComponent } from './view/carrinho/carrinho.component';
-import { PokeModelComponent } from './model/poke-model/poke-model.component';
 
 
 @NgModule({
@@ -17,7 +16,6 @@ import { PokeModelComponent } from './model/poke-model/poke-model.component';
     PrincipalComponent,
     PokeCardComponent,
     CarrinhoComponent,
-    PokeModelComponent
   ],
   imports: [
     BrowserModule,

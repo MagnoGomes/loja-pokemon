@@ -1,51 +1,87 @@
-<div class="container text-center">
+<div class="header">
 
-  <div class="col-md-5 col-sm-12">
-    <div class="bigcart"></div>
-    <h1>Your shopping cart</h1>
-  </div>
+  <h1 class="poke-header">Todos os Pokémon<img id="poke-header-icon" [src]="headerLoad"></h1>
+</div>
+ <div class="container">
+  <div class="row">
 
-  <div class="col-md-7 col-sm-12 text-left">
-    <ul>
-      <li class="row list-inline columnCaptions">
-        <span>QTY</span>
-        <span>ITEM</span>
-        <span>Price</span>
-      </li>
-      <li class="row">
-        <span class="quantity">1</span>
-        <span class="itemName">Birthday Cake</span>
-        <span class="popbtn"><a class="arrow"></a></span>
-        <span class="price">$49.95</span>
-      </li>
-      <li class="row">
-        <span class="quantity">50</span>
-        <span class="itemName">Party Cups</span>
-        <span class="popbtn"><a class="arrow"></a></span>
-        <span class="price">$5.00</span>
-      </li>
-      <li class="row">
-        <span class="quantity">20</span>
-        <span class="itemName">Beer kegs</span>
-        <span class="popbtn"><a class="arrow"></a></span>
-        <span class="price">$919.99</span>
-      </li>
-      <li class="row">
-        <span class="quantity">18</span>
-        <span class="itemName">Pound of beef</span>
-        <span class="popbtn"><a class="arrow"></a></span>
-        <span class="price">$269.45</span>
-      </li>
-      <li class="row">
-        <span class="quantity">1</span>
-        <span class="itemName">Bullet-proof vest</span>
-        <span class="popbtn"  data-parent="#asd" data-toggle="collapse" data-target="#demo"><a class="arrow"></a></span>
-        <span class="price">$450.00</span>
-      </li>
-      <li class="row totals">
-        <span class="itemName">Total:</span>
-        <span class="price">$1694.43</span>
-        <span class="order"> <a class="text-center">ORDER</a></span>
-      </li>
-    </ul>
+    <div class="col-md-3 prodHeight">
+      <div class="prodPicture">
+        <h2 id="poked1" style="text-transform: capitalize; padding-top: 5px;"></h2>
+        <img id="poked1-img" src="#">
+      </div>
+      <div class="prodInfo row">
+        <div class="col-md-6">
+          <h4>Preço</h4>
+        </div>
+        <div class="col-md-6">
+          <h4>R$:425</h4>
+        </div>
+      </div>
+      <div></div>
+      <button id="prod1">COMPRAR</button>
+    </div>
+<!--Aqui-->
+    <div class="col-md-1"></div>
+    <div class="col-md-3 prodHeight">
+      <div class="prodPicture">
+        <img id="poked2-img" src="#">
+      </div>
+      <div class="prodInfo row">
+        <div class="col-md-6">
+          <h4 id="poked2" style="text-transform: capitalize;"></h4>
+        </div>
+        <div class="col-md-6">
+          <h4>R$ 225</h4>
+        </div>
+      </div>
+      <button id="prod2">COMPRAR</button>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-3 prodHeight">
+      <div class="prodPicture">
+        <img id="poked3-img" src="#">
+      </div>
+      <div class="prodInfo row">
+        <div class="col-md-6">
+          <h4 id="poked3" style="text-transform: capitalize;"></h4>
+        </div>
+        <div class="col-md-6">
+          <h4>R$ 625</h4>
+        </div>
+      </div>
+      <button id="prod3">COMPRAR</button>
+    </div>
   </div>
+  <div class="row">
+    <div class="col-md-3 prodHeight">
+      <div class="prodPicture">
+        <img id="poked4-img" src="#">
+      </div>
+      <div class="prodInfo row">
+        <div class="col-md-6">
+          <h4 id="poked4" style="text-transform: capitalize;"></h4>
+        </div>
+        <div class="col-md-6">
+          <h4>R$ 1025</h4>
+        </div>
+      </div>
+      <button id="prod4">COMPRAR</button>
+    </div>
+  </div>
+<br><br>
+<div class="container">
+  <h2 id="shopHead">MEU CARRINHO</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>POKÉMON</th>
+        <th>QUANTDADE</th>
+        <th>PREÇO</th>
+      </tr>
+    </thead>
+    <tbody id="cartEntry">
+    </tbody>
+  </table>
+  <h4 id="total">PREÇO TOTAL:&nbsp;&nbsp;R$: <span id="totalPrice">0</span></h4>
+</div>
