@@ -91,7 +91,7 @@ pokemonInfo() {
         let icon4 = data['sprites']['front_default'];
         document.getElementById('poked4-img').setAttribute('src',icon4);
         document.getElementById('poked4-id').innerHTML = data.id;
-        document.getElementById('poked4-tipo').innerHTML = data['types']['1']['type']['name'];
+        document.getElementById('poked4-tipo').innerHTML = data['types']['0']['type']['name'];
         document.getElementById('poked4-peso').innerHTML = data.weight;
       })
 
@@ -100,18 +100,12 @@ pokemonInfo() {
       })
   }
 
-  preco: any;
-    getPreco() {
-      this.preco = (Math.random() * 50);
-      var precoMoeda = this.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-      return precoMoeda;
-      //remover depois
-    }
+
 
 getCart() {
     var cart = [];
-    var products = [{ name: "Bulbasaur", price: 425 }, { name: "Vulpix", price: 225 }, { name: "Pidgey", price: 625 },
-    { name: "Miltank", price: 1025 }];
+    var products = [{ name: "Bulbasaur", price: 530.00}, { name: "Vulpix", price: 725.00 }, { name: "Pidgey", price: 525.00 },
+    { name: "Miltank", price: 1250.00}];
     function refreshProducts() {
       for (var i = 0; i < cart.length; i++) {
         $("#prod" + (cart[i].index + 1)).prop('disabled', true);
@@ -126,13 +120,13 @@ getCart() {
       var sum = 0;
       for (var i = 0; i < cart.length; i++) {
         sum += cart[i].price;
-        var remove = $('<span class="remove">Remover</span>')
+        var remove = $('<button class="remove btn btn-danger">Remover</button>')
         remove.attr("remove-id", i);
         remove.attr("product-id", cart[i].index);
-        var decrease = $('<span class="decrease">-</span>')
+        var decrease = $('<button class="decrease btn btn-primary">-</button>')
         decrease.attr("decrease-id", i);
         decrease.attr("product-id", cart[i].index);
-        var increase = $('<span class="increase">+</span>')
+        var increase = $('<button class="increase btn btn-success">+</button>')
         increase.attr("increase-id", i);
         increase.attr("product-id", cart[i].index);
         var price = $('</td>' + '<td>' + cart[i].price + '</td>');
@@ -184,7 +178,7 @@ getCart() {
         refreshProducts()
       })
     }
-    //saving the changes in the cart
+    // Salva as alterações no carrinho
     function saveCart() {
       localStorage.setItem('cart', JSON.stringify(cart));
     }

@@ -13,10 +13,10 @@ export class MenuComponent implements OnInit {
   pokeStoreIcon: string;
 
   constructor(private pokeMenu: PokeCardServiceService) {
-  this.pokeStoreIcon = this.pokeMenu.getUrlMenuIcon();
+    this.pokeStoreIcon = this.pokeMenu.getUrlMenuIcon();
 
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
 }

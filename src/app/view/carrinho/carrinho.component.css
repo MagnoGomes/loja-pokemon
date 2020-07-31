@@ -1,5 +1,9 @@
 *{
-  font-family: 'Patrick Hand SC', cursive;
+  font-family: Helvetica;
+  font-weight: 700;
+}
+h2 {
+  color: #1a2a44c4;
 }
 .header {
   padding: 20px;
@@ -13,13 +17,16 @@
   width: 60px;
 }
 .prodHeight {
-  height: 300px;
-  margin: 10px;
-  box-sizing: border-box;
-  border: 1px solid;
+  margin: 46px;
+  outline: 8px dotted rgba(67,113,164,0.45);
+  outline-offset: 7px;
+  border: 5px ridge rgba(67,113,164,0.45);
+  border-radius: 16px 16px 16px 16px;
 }
 div.prodPicture {
-  height: 200px;
+  padding-top: 25px;
+  top: -32px;
+  position: relative;
   text-align: center;
 }
 div.prodPicture > img {
@@ -38,14 +45,9 @@ div.prodInfo {
 }
 .container {
   text-align: center;
+  margin: 0;
 }
-/*div.row > div.col-md-3,div.col-md-6 {
-  border: 1px solid;
-}
-div.row > div.col-md-6 {
-  border-left: 0;
-  border-right: 0;
-}*/
+
 #shopHead {
   font-weight: 700;
   text-shadow: 2px 2px 0px #ce8383;
@@ -55,9 +57,12 @@ div.row > div.col-md-6 {
   border-color: #e88e8e;
   border-style: dotted;
   padding: 5px;
+  left: -33px;
+  width: 439px;
+  position: relative;
 }
 thead {
-  font-size: 28px;
+  font-size: 18px;
   text-align: center;
 }
 .header {
@@ -66,7 +71,6 @@ thead {
   display: flex;
   justify-content: center;
 }
-
 .poke-header {
   padding: 31px;
   font-weight: 700;
@@ -75,7 +79,6 @@ thead {
   font-family: Helvetica;
   font-size: 57px;
 }
-
 #poke-header-icon {
   width: 76px;
   height: 138px;
@@ -83,20 +86,47 @@ thead {
   top: -18px;
   padding-left: 9px;
 }
-
-.table thead th {
-  font-weight: 700;
-  text-shadow: 2px 2px 0px #d6c0c0;
-  color: #79a0bd
+table {
+  color: #020202;
+  font-family: cursive;
 }
-
-.table-bordered td, .table-bordered th {
-  border: 3px solid #789cbd !important;
-}
-
 #total {
   font-weight: 700;
   text-shadow: 2px 2px 0px #d8d8d8;
   color: #020202;
   font-family: Helvetica;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-sm.stats{
+  border-top: 1px solid #ebeff2;
+  background: #f7f8fa;
+  overflow: auto;
+  padding: 15px 0;
+  font-size: 16px;
+  color: #59687f;
+  font-weight: 600;
+  top: -38px;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+}
+.col-sm.stats div{
+	border-right:1px solid #ebeff2;
+	width: 33.33333%;
+	float:left;
+	text-align:center;
+}
+
+.col-sm.stats div:nth-of-type(3){border:none;}
+
+button {
+  border: 1px solid;
+  -moz-border-radius: 13px;
+  border-radius: 5px;
+  background-color: #da3545;
+    color: white;
+  top: -12px !important;
+  position: relative;
 }

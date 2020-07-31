@@ -1,87 +1,113 @@
 <div class="header">
-
   <h1 class="poke-header">Todos os Pokémon<img id="poke-header-icon" [src]="headerLoad"></h1>
 </div>
- <div class="container">
-  <div class="row">
 
-    <div class="col-md-3 prodHeight">
-      <div class="prodPicture">
-        <h2 id="poked1" style="text-transform: capitalize; padding-top: 5px;"></h2>
-        <img id="poked1-img" src="#">
-      </div>
-      <div class="prodInfo row">
-        <div class="col-md-6">
-          <h4>Preço</h4>
-        </div>
-        <div class="col-md-6">
-          <h4>R$:425</h4>
-        </div>
-      </div>
-      <div></div>
-      <button id="prod1">COMPRAR</button>
-    </div>
-<!--Aqui-->
-    <div class="col-md-1"></div>
-    <div class="col-md-3 prodHeight">
-      <div class="prodPicture">
-        <img id="poked2-img" src="#">
-      </div>
-      <div class="prodInfo row">
-        <div class="col-md-6">
-          <h4 id="poked2" style="text-transform: capitalize;"></h4>
-        </div>
-        <div class="col-md-6">
-          <h4>R$ 225</h4>
-        </div>
-      </div>
-      <button id="prod2">COMPRAR</button>
-    </div>
-    <div class="col-md-1"></div>
-    <div class="col-md-3 prodHeight">
-      <div class="prodPicture">
-        <img id="poked3-img" src="#">
-      </div>
-      <div class="prodInfo row">
-        <div class="col-md-6">
-          <h4 id="poked3" style="text-transform: capitalize;"></h4>
-        </div>
-        <div class="col-md-6">
-          <h4>R$ 625</h4>
-        </div>
-      </div>
-      <button id="prod3">COMPRAR</button>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3 prodHeight">
-      <div class="prodPicture">
-        <img id="poked4-img" src="#">
-      </div>
-      <div class="prodInfo row">
-        <div class="col-md-6">
-          <h4 id="poked4" style="text-transform: capitalize;"></h4>
-        </div>
-        <div class="col-md-6">
-          <h4>R$ 1025</h4>
-        </div>
-      </div>
-      <button id="prod4">COMPRAR</button>
-    </div>
-  </div>
-<br><br>
 <div class="container">
-  <h2 id="shopHead">MEU CARRINHO</h2>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>POKÉMON</th>
-        <th>QUANTDADE</th>
-        <th>PREÇO</th>
-      </tr>
-    </thead>
-    <tbody id="cartEntry">
-    </tbody>
-  </table>
-  <h4 id="total">PREÇO TOTAL:&nbsp;&nbsp;R$: <span id="totalPrice">0</span></h4>
+  <div class="row">
+    <div class="col-sm">
+
+      <div class="row">
+
+        <div class="col-sm-4 prodHeight">
+          <div class="prodPicture">
+            <h2 id="poked1" style="text-transform: capitalize; padding-top: 5px;"></h2>
+            <img id="poked1-img" src="#">
+          </div>
+          <div class="col-sm stats">
+            <h4>ID: <a id="poked1-id"></a></h4>
+            <hr />
+            <h4>Tipo:<a id="poked1-tipo" style="text-transform: capitalize;"></a></h4>
+            <hr />
+            <h4>Peso: <a id="poked1-peso"></a><a>lb</a></h4>
+            <hr />
+            <br>
+            <h4>Preço: R$530,00</h4>
+          </div>
+          <div>
+            <button id="prod1" type="button" class="btn btn-light">COMPRAR</button>
+          </div>
+        </div>
+        <br>
+
+        <div class="col-sm-4 prodHeight">
+          <div class="prodPicture">
+            <h2 id="poked2" style="text-transform: capitalize; padding-top: 5px;"></h2>
+            <img id="poked2-img" src="#">
+          </div>
+          <div class="col-sm stats">
+            <h4>ID: <a id="poked2-id"></a></h4>
+            <hr />
+            <h4>Tipo:<a id="poked2-tipo" style="text-transform: capitalize;"></a></h4>
+            <hr />
+            <h4>Peso: <a id="poked2-peso"></a><a>lb</a></h4>
+            <hr />
+            <br>
+            <h4>Preço: R$725,00</h4>
+          </div>
+          <div>
+            <button id="prod2" type="button" class="btn btn-light">COMPRAR</button>
+          </div>
+        </div>
+        <br>
+
+        <div class="col-sm-4 prodHeight">
+          <div class="prodPicture">
+            <h2 id="poked3" style="text-transform: capitalize; padding-top: 5px;"></h2>
+            <img id="poked3-img" src="#">
+          </div>
+          <div class="col-sm stats">
+            <h4>ID: <a id="poked3-id"></a></h4>
+            <hr />
+            <h4>Tipo:<a id="poked3-tipo" style="text-transform: capitalize;"></a></h4>
+            <hr />
+            <h4>Peso: <a id="poked3-peso"></a><a>lb</a></h4>
+            <hr />
+            <h4>Preço: R$525,00</h4>
+          </div>
+          <div>
+            <button id="prod3" type="button" class="btn btn-light">COMPRAR</button>
+          </div>
+        </div>
+        <br>
+
+        <div class="col-sm-4 prodHeight">
+          <div class="prodPicture">
+            <h2 id="poked4" style="text-transform: capitalize; padding-top: 5px;"></h2>
+            <img id="poked4-img" src="#">
+          </div>
+          <div class="col-sm stats">
+            <h4>ID:<a id="poked4-id"></a></h4>
+            <hr />
+            <h4>Tipo:<a id="poked4-tipo" style="text-transform: capitalize;"></a></h4>
+            <hr />
+            <h4>Peso: <a id="poked4-peso"></a><a>lb</a></h4>
+            <hr />
+            <h4>Preço: R$1.250,00</h4>
+          </div>
+          <div>
+            <button id="prod4" type="button" class="btn btn-light">COMPRAR</button>
+          </div>
+        </div>
+        <br>
+      </div>
+
+    </div>
+
+    <div class="col-sm carrinho col-md-4">
+      <div class="container">
+        <h2 id="shopHead">MEU CARRINHO</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>POKÉMON</th>
+              <th>QUANTIDADE</th>
+              <th>PREÇO</th>
+            </tr>
+          </thead>
+          <tbody id="cartEntry"></tbody>
+        </table>
+        <h4 id="total">PREÇO TOTAL:&nbsp;&nbsp;R$: <span id="totalPrice">0</span></h4>
+      </div>
+    </div>
+  </div>
 </div>

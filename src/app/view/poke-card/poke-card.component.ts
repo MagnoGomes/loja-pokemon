@@ -14,14 +14,12 @@ export class PokeCardComponent implements OnInit {
   namepoke: any;
   namepoke2: any;
   namepoke3: any;
-  valor: number;
 
   constructor(private pokeCardServiceService: PokeCardServiceService, private infoservice: InfoService) {
     this.urlDestaque = this.pokeCardServiceService.getUrlDestaqueIcon();
     this.namepoke = this.infoservice.pokemonInfo();
     this.namepoke2 = this.infoservice.pokemonInfo2();
     this.namepoke3 = this.infoservice.pokemonInfo3();
-    this.valor = this.infoservice.getPreco();
   }
 
   ngOnInit(): void {
