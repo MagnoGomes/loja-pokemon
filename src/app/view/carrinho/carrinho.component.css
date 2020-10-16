@@ -130,3 +130,15 @@ button {
   top: -12px !important;
   position: relative;
 }
+
+.col-sm-4:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  border-color: #ffbb33;
+  outline: 8px dotted rgb(245 192 116 / 87%);
+}
+
+

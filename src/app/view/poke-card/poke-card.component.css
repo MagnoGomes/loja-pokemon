@@ -152,16 +152,20 @@ div.footer a.Cbtn-danger:hover{
 	background-color: #fd7676;
 }
 
+.promotion-center {
+  display: flex !important;
+  justify-content: center;
+}
 
-footer{
-  text-align: center;
-  background-color: aquamarine;
-  padding: 13px;
-  width: 100%;
-   position: fixed;}
+.tile:hover{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  border-color: #ffbb33;
+}
 
-   .promotion-center {
-     display: flex !important;
-     justify-content: center;
-   }
-
+strong {
+  color: #5aadef;
+}

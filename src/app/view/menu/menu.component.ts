@@ -1,7 +1,6 @@
-import { PokeCardServiceService } from './../poke-card/poke-card-service.service';
 import { Component, OnInit } from '@angular/core';
 
-
+import { PokeCardServiceService } from './../poke-card/poke-card-service.service';
 
 @Component({
   selector: 'poke-menu',
@@ -16,7 +15,5 @@ export class MenuComponent implements OnInit {
     this.pokeStoreIcon = this.pokeMenu.getUrlMenuIcon();
 
   }
-
   ngOnInit(): void { }
-
 }

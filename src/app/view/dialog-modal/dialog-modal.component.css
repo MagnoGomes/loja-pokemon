@@ -1,0 +1,28 @@
+#pokeFinished {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 1%);
+}
+
+#pokeTitle {
+  font-weight: 700;
+  text-shadow: 2px 2px 0px #ce8383;
+  color: #789cbd;
+  font-family: Helvetica;
+  text-align: center;
+  padding: 17px;
+  line-height: 40px;
+  font-size: 41px;
+}
+
+#closeAction {
+  color: #fff;
+  background-color: #bd2130;
+  border-color: #b21f2d;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}

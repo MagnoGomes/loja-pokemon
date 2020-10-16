@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import * as $ from 'jquery';
-import * as _ from 'underscore';
+//import * as _ from 'underscore';
 @Injectable({
   providedIn: 'root'
 })
@@ -11,34 +11,34 @@ export class InfoService {
   url = 'https://pokeapi.co/api/v2/pokemon/1';
   url2 = 'https://pokeapi.co/api/v2/pokemon/37';
   url3 = 'https://pokeapi.co/api/v2/pokemon/16';
-  url4= 'https://pokeapi.co/api/v2/pokemon/241';
-  iconUrl= 'https://image.flaticon.com/icons/svg/188/188948.svg';
+  url4 = 'https://pokeapi.co/api/v2/pokemon/241';
+  iconUrl = 'https://image.flaticon.com/icons/svg/188/188948.svg';
 
-constructor() { }
+  constructor() { }
 
-getImgUrl(){
-  return this.iconUrl;
-}
+  getImgUrl() {
+    return this.iconUrl;
+  }
 
-pokemonInfo() {
+  pokemonInfo() {
 
     fetch(this.url)
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          document.getElementById('poked1').innerHTML = data.name;
-          let icon1 = data['sprites']['front_default'];
-          document.getElementById('poked1-img').setAttribute('src', icon1);
-          document.getElementById('poked1-id').innerHTML = data.id;
-          document.getElementById('poked1-tipo').innerHTML = data['types']['0']['type']['name'];
-          document.getElementById('poked1-peso').innerHTML = data.weight;
-        })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        document.getElementById('poked1').innerHTML = data.name;
+        let icon1 = data['sprites']['front_default'];
+        document.getElementById('poked1-img').setAttribute('src', icon1);
+        document.getElementById('poked1-id').innerHTML = data.id;
+        document.getElementById('poked1-tipo').innerHTML = data['types']['0']['type']['name'];
+        document.getElementById('poked1-peso').innerHTML = data.weight;
+      })
 
-        .catch((error) => {
-          console.log('Erro!!!')
-        })
-    }
+      .catch((error) => {
+        console.log('Erro!!!')
+      })
+  }
 
   pokemonInfo2() {
 
@@ -49,7 +49,7 @@ pokemonInfo() {
       .then((data) => {
         document.getElementById('poked2').innerHTML = data.name;
         let icon2 = data['sprites']['front_default'];
-        document.getElementById('poked2-img').setAttribute('src',icon2);
+        document.getElementById('poked2-img').setAttribute('src', icon2);
         document.getElementById('poked2-id').innerHTML = data.id;
         document.getElementById('poked2-tipo').innerHTML = data['types']['0']['type']['name'];
         document.getElementById('poked2-peso').innerHTML = data.weight;
@@ -69,7 +69,7 @@ pokemonInfo() {
       .then((data) => {
         document.getElementById('poked3').innerHTML = data.name;
         let icon3 = data['sprites']['front_default'];
-        document.getElementById('poked3-img').setAttribute('src',icon3);
+        document.getElementById('poked3-img').setAttribute('src', icon3);
         document.getElementById('poked3-id').innerHTML = data.id;
         document.getElementById('poked3-tipo').innerHTML = data['types']['1']['type']['name'];
         document.getElementById('poked3-peso').innerHTML = data.weight;
@@ -89,7 +89,7 @@ pokemonInfo() {
       .then((data) => {
         document.getElementById('poked4').innerHTML = data.name;
         let icon4 = data['sprites']['front_default'];
-        document.getElementById('poked4-img').setAttribute('src',icon4);
+        document.getElementById('poked4-img').setAttribute('src', icon4);
         document.getElementById('poked4-id').innerHTML = data.id;
         document.getElementById('poked4-tipo').innerHTML = data['types']['0']['type']['name'];
         document.getElementById('poked4-peso').innerHTML = data.weight;
@@ -100,12 +100,11 @@ pokemonInfo() {
       })
   }
 
-
-
-getCart() {
+  getCart() {
     var cart = [];
-    var products = [{ name: "Bulbasaur", price: 530.00}, { name: "Vulpix", price: 725.00 }, { name: "Pidgey", price: 525.00 },
-    { name: "Miltank", price: 1250.00}];
+    var products = [{ name: "Bulbasaur", price: 530.00 }, { name: "Vulpix", price: 725.00 }, { name: "Pidgey", price: 525.00 },
+    { name: "Miltank", price: 1250.00 }];
+
     function refreshProducts() {
       for (var i = 0; i < cart.length; i++) {
         $("#prod" + (cart[i].index + 1)).prop('disabled', true);
@@ -178,9 +177,16 @@ getCart() {
         refreshProducts()
       })
     }
+
     // Salva as alterações no carrinho
     function saveCart() {
       localStorage.setItem('cart', JSON.stringify(cart));
+      if (cart != null || cart.length != 0) {
+        document.getElementById("finish").style.visibility = "visible";
+      }
+      if (cart == null || cart.length == 0) {
+        document.getElementById("finish").style.visibility = "hidden";
+      }
     }
     $(function () {
       retrieve();
@@ -203,3 +209,4 @@ getCart() {
     });
   }
 }
+
