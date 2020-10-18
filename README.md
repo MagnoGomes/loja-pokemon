@@ -1,5 +1,10 @@
 # PokeProject
 
+SPA utilizando Angular 2x / 4x, Typescript e Javascript.
+API: Pokéapi
+Serviços/Rotas/API.
+Front: Angular material + Bootstrap.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
 
 ## Development server
